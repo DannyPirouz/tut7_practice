@@ -24,11 +24,15 @@ index.html: report/report.qmd output/coef.csv output/fig.png
 report:
 	make index.html
 
+# clean:
+# 	rm -f output/*
+# 	rm -f data/clean/*
+# 	rm -f index.html
+# 	rm -f *.pdf
+
 clean:
-	rm -f output/*
-	rm -f data/clean/*
-	rm -f index.html
-	rm -f *.pdf
-
-
+	del /Q output\*
+	del /Q data\clean\*
+	del /Q index.html
+	del /Q *.pdf
 
